@@ -1,0 +1,16 @@
+[result]
+description = "higher grain yield (3.0 to 4.0 kg/m2)"
+result = "result/case3.log"
+
+[scalar]
+cow_space_m2 = 5
+grain_per_cow_kg = 15
+calf_cost = 200
+grain_buy_price_per_kg = 50
+max_land_fraction = 0.5
+total_years = 10
+
+[table_path]
+activity = "activity.csv"
+block = "block.csv"
+cow_price = "cow_price.csv"
