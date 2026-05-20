@@ -109,19 +109,19 @@ The calf cost term uses a telescoping argument: since herd size is non-decreasin
 
 **C1 — One activity per block per year**
 
-$$\sum_{a \in A} x_{t,b,a} = 1 \quad \forall\, t \in T,\; b \in B$$
+$$\sum_{a \in A} x_{t,b,a} = 1 \quad \forall t \in T, b \in B$$
 
 **C2 — Herd non-decreasing** (no mid-decade selling)
 
-$$\sum_{b \in B} y_{t,b} \ge \sum_{b \in B} y_{t-1,b} \quad \forall\, t \ge 1$$
+$$\sum_{b \in B} y_{t,b} \ge \sum_{b \in B} y_{t-1,b} \quad \forall t \in T, t \ge 1$$
 
 **C3 — Cow–land lower bound** (no degenerate cow blocks with zero cows)
 
-$$y_{t,b} \ge 0.1 \cdot x_{t,b,\text{cows}} \quad \forall\, t,b$$
+$$y_{t,b} \ge 0.1 \cdot x_{t,b,\text{cows}} \quad \forall t \in T, b \in B$$
 
 **C4 — Cow–land upper bound** (big-M: no cows without a cow block)
 
-$$y_{t,b} \le M_b \cdot x_{t,b,\text{cows}} \quad \forall\, t,b$$
+$$y_{t,b} \le M_b \cdot x_{t,b,\text{cows}} \quad \forall t \in T, b \in B$$
 
 **C5 — Grain balance, year 1** (no prior harvest; all feed purchased)
 
@@ -129,15 +129,15 @@ $$q \sum_{b \in B} y_{0,b} = h_0$$
 
 **C6 — Grain balance, years 2–10**
 
-$$q \sum_{b \in B} y_{t,b} = g_t + h_t \quad \forall\, t \ge 1$$
+$$q \sum_{b \in B} y_{t,b} = g_t + h_t \quad \forall t \in T, t \ge 1$$
 
 **C7 — Grain supply from prior planting**
 
-$$r_{\text{grain}} \sum_{b \in B} x_{t,b,\text{grain}} \cdot s_b \ge g_{t+1} \quad \forall\, t \le 8$$
+$$r_{\text{grain}} \sum_{b \in B} x_{t,b,\text{grain}} \cdot s_b \ge g_{t+1} \quad \forall t \in T, t \le 8$$
 
 **C8 — Land-use cap per activity**
 
-$$\sum_{b \in B} x_{t,b,a} \cdot s_b \le d \cdot L \quad \forall\, t \in T,\; a \in A$$
+$$\sum_{b \in B} x_{t,b,a} \cdot s_b \le d \cdot L \quad \forall t \in T, a \in A$$
 
 ---
 
