@@ -97,11 +97,10 @@ The $f_t$ parameter encodes the incremental value of keeping a calf alive throug
 ### Objective — maximise profit
 
 $$
-\max \quad \underbrace{\sum_{t \in T} \sum_{b \in B} \sum_{a \in C} x_{t,b,a} \cdot s_b \cdot (r_a p_a - w_a)}_{\text{crop revenue}} + \underbrace{\sum_{t \in T} \sum_{b \in B} f_t \cdot y_{t,b}}_{\text{cow value}}
-$$
-
-$$
-- \underbrace{\pi \sum_{t \in T} h_t}_{\text{grain purchase}} - \underbrace{p_{\text{grain}} \sum_{t=1}^{9} g_t}_{\text{grain opportunity cost}} - \underbrace{\kappa \sum_{b \in B} y_{9,b}}_{\text{calf cost (telescoping)}}
+\begin{aligned}
+\max \quad & \underbrace{\sum_{t \in T} \sum_{b \in B} \sum_{a \in C} x_{t,b,a} \cdot s_b \cdot (r_a p_a - w_a)}_{\text{crop revenue}} + \underbrace{\sum_{t \in T} \sum_{b \in B} f_t \cdot y_{t,b}}_{\text{cow value}} \\
+& - \underbrace{\pi \sum_{t \in T} h_t}_{\text{grain purchase}} - \underbrace{p_{\text{grain}} \sum_{t=1}^{9} g_t}_{\text{grain opportunity cost}} - \underbrace{\kappa \sum_{b \in B} y_{9,b}}_{\text{calf cost (telescoping)}}
+\end{aligned}
 $$
 
 The calf cost term uses a telescoping argument: since herd size is non-decreasing (C2), the total calves ever purchased equals the final herd size $\sum_b y_{9,b}$, each costing $\kappa$.
